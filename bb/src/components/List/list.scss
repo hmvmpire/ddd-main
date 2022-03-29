@@ -1,0 +1,18 @@
+
+
+.listCp__main{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.75)!important;
+
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+    max-height: 100vh;
+
+    &.column{
+        flex-direction: column;
+    }
+
+    &.row{
+        flex-direction: row;
+    }
+}

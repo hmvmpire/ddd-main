@@ -1,0 +1,37 @@
+.ctextCp__main {
+    font-size: $fz-CText;
+    text-align: center;
+    position: relative;
+
+    &.up {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 25%;
+            right: -1em;
+            border-style: solid;
+            border-width: 0 3px 3px 0;
+            padding: 3px;
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+    }
+
+    &.down {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 25%;
+            right: -1em;
+            border-style: solid;
+            border-width: 0 3px 3px 0;
+            padding: 3px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    }
+
+    &.filteroptions{
+        cursor: auto;
+    }
+}

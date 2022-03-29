@@ -1,0 +1,23 @@
+
+
+.filterCp__main{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 1em 0;
+    text-transform: uppercase;
+    font-size: $fz-CTextHeader;
+    font-family: $ff-OpenSansBold;
+    //border-bottom: 2px solid;
+
+    >*{
+        flex-basis: 100%;
+    }
+
+    .ctextCp__main{
+        cursor: pointer;
+        user-select: none;
+    }
+}

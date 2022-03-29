@@ -1,0 +1,14 @@
+.layout {
+  display: grid;
+  grid-template-areas: 'MYHEADER' 'MYCONTENT';
+  grid-template-rows: 150px;
+  min-width: 100vh;
+  min-height: 100vh;
+
+  .layout_body {
+    display: flex;
+    justify-content: center;
+    grid-area: MYCONTENT;
+    margin: 1em;
+  }
+}

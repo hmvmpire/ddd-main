@@ -1,0 +1,20 @@
+
+
+
+header {
+    grid-area: MYHEADER;
+    height: 150px;
+    padding: 2em;
+
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: 100%;
+
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}

@@ -1,0 +1,84 @@
+.myModal__main {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    //overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .myModal__content {
+        position: relative;
+        z-index: 1500;
+        height: 80%;
+        width: Min(90%, 70rem);
+        // top: 50%;
+        // left: 50%;
+        //  transform: translate(-50%, -50%);
+        display: grid;
+        //grid-template-areas: "MyModalHeader" "MyModalBody" "MyModalFooter";
+
+        .myModal__header {
+            position: relative;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            //grid-area: MyModalHeader;
+            h1 {
+                margin: 0;
+                padding: 1em;
+            }
+
+            .close_button {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 50px;
+                font-weight: 700;
+                aspect-ratio: 1;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .myModal__body {
+            padding: 1em;
+            //max-height: 80%;
+            //grid-area: MyModalBody;
+            overflow: auto;
+            position: relative;
+            //border-bottom-width: 1px;
+            //border-bottom-style: solid;
+        }
+
+        .myModal__footer {
+            //grid-area: MyModalFooter;
+            border-top-width: 1px;
+            border-top-style: solid;
+            padding: 1em;
+        }
+    }
+}
+
+@media (min-width: 60em) {
+    .myModal__main {
+        .myModal__content {
+            .myModal__header {
+                h1 {
+                    margin: 0;
+                    padding: 1em;
+                }
+            }
+
+            .myModal__body {
+            }
+
+            .myModal__footer {
+            }
+        }
+    }
+}
